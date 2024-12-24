@@ -1,0 +1,18 @@
+{
+    "include": [
+        "{{cookiecutter.project_slug}}",
+        "tests"
+    ],
+    "exclude": [
+        "**/node_modules",
+        "**/__pycache__"
+    ],
+    "defineConstant": {
+        "DEBUG": true
+    },
+    "venv": ".venv",
+    "reportMissingImports": true,
+    "reportMissingTypeStubs": false,
+    "pythonVersion": "{{cookiecutter.python_version}}",
+    "typeCheckingMode": "basic"
+}
